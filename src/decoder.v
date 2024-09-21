@@ -1,6 +1,6 @@
 Module seg7 (
   input wire [3:0] digit,
-  output ref [6:0] segement
+  output ref [6:0] segment
 
 always @(*) begin
   case(digit)
