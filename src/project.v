@@ -29,7 +29,7 @@ always @(posedge clk) begin
       counter <= 24'd0;
       display_value <= display_value + 1'b1;
 
-    if (display_value == 4'd15) begin
+        if (display_value == 4'd9) begin
        display_value <= 4'd0;
 end
 end else begin
@@ -41,8 +41,5 @@ assign uio_out = 0;
 assign uio_oe 0;
 
 // List all unused inputs to prevent warnings
-
-wire_unused &{ena, ui_in, uio_in};
-
-
+wire_unused &{ena,ui_in,uio_in};
 endmodule
