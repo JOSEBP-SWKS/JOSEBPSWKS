@@ -3,7 +3,7 @@ Module seg7 (
   output ref [6:0] segement
 
 always @(*) begin
-        case(LETRA)
+  case(digit)
            4'd0: segments = 7'b1110111; //A
            4'd1: segments = 7'b1111100; //B
            4'd2: segments = 7'b1011110; //D
